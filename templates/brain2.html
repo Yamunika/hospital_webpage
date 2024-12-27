@@ -1,0 +1,72 @@
+{% extends 'dummy.html' %}
+{% block title %}
+<title>Brain2</title>
+{% endblock %}
+
+{% block body %}
+<style>
+
+    input{
+        padding:5px;
+        margin:15px;
+        border-radius: 5px;
+
+    }
+    .c1{
+        border:3px solid black;
+        margin-left: 600px;
+        margin-right: 600px;
+        background-color: white;
+        
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 400px;
+        border-radius: 20px;
+
+    }
+    button{
+        margin:15px;
+    }
+    body{
+        background-image: url(https://wallpaperaccess.com/full/1282799.jpg);
+        background-size: cover;
+        height: 100%;
+        
+    }
+    h1{
+        color: white;
+    }
+    a{
+        color: white;
+    }
+    
+    
+</style>
+<body>
+<center>
+    <h1>Patient<span>
+        <h6>Login Form</h6>
+    </span></h1>
+<form class="c1" align="center">
+    <h1>LOGIN FORM</h1>
+    <label for="username">Name</label>
+    <input type="name" placeholder="Enter name"><br>
+    <label for="password">Email</label>
+    <input type="email" placeholder="Enter email"><br>
+    <label for="gender">Gender</label><br>
+    <input type="radio" id="male" value="male">
+    <label for="gender">Male</label>
+    <input type="radio" id="male" value="male">
+    <label for="gender">Female</label><br>
+    <button class="btn btn-primary">submit</button>
+ </form>
+ 
+</center>
+</body>
+<center>
+<a href="{% url 'heart:specialist' %}">Click Here go to Hospital Page</a>
+</center>   
+{% endblock %}
+
+    
+       

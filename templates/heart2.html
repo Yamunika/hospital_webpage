@@ -1,0 +1,172 @@
+{% extends 'dummy.html' %}
+{% block title %}
+<title>Heart2</title>
+{% endblock %}
+{% block body %}
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            background-image: url(https://tse3.mm.bing.net/th?id=OIP.9OL03YF5ipCoRn5d8q5U_AHaEJ&pid=Api&P=0&h=180);
+            background-size: cover;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #007bff;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+    </style>
+
+
+    <div class="container">
+        <h1>Our Doctors & Specializations</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Doctor Name</th>
+                    <th>Specialization</th>
+                    <th>Experience</th>
+                    <th>Contact Email</th>
+                    <th>Contact Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dr. John Smith</td>
+                    <td>Cardiology</td>
+                    <td>15 Years</td>
+                    <td>johnsmith@hospital.com</td>
+                    <td>+1 234-567-8901</td>
+                </tr>
+                <tr>
+                    <td>Dr. Emily Johnson</td>
+                    <td>Pediatrics</td>
+                    <td>10 Years</td>
+                    <td>emilyjohnson@hospital.com</td>
+                    <td>+1 234-567-8902</td>
+                </tr>
+                <tr>
+                    <td>Dr. Rajesh Kumar</td>
+                    <td>Orthopedics</td>
+                    <td>12 Years</td>
+                    <td>rajeshkumar@hospital.com</td>
+                    <td>+91 98765-43210</td>
+                </tr>
+                <tr>
+                    <td>Dr. Sarah Lee</td>
+                    <td>Dermatology</td>
+                    <td>8 Years</td>
+                    <td>sarahlee@hospital.com</td>
+                    <td>+1 234-567-8903</td>
+                </tr>
+                <tr>
+                    <td>Dr. Ahmed Khan</td>
+                    <td>Neurology</td>
+                    <td>20 Years</td>
+                    <td>ahmedkhan@hospital.com</td>
+                    <td>+92 123-456-7890</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="footer">For appointments, please contact the respective doctor via email or phone.</p>
+    </div>
+    <footer style="background-color: #f1f1f1; padding: 20px; text-align: center; font-size: 14px; color: #555;">
+        <div>
+            <p>&copy; 2024 [Hospital Name]. All Rights Reserved.</p>
+        </div>
+        <div style="margin: 20px 0;">
+            <p><strong>Explore Our Specializations:</strong></p>
+            <ul style="list-style: none; padding: 0; margin: 10px auto; text-align: left; display: inline-block;">
+                <li>
+                    <strong>Cardiology:</strong> Heart and circulatory system disorders. 
+                    <a href="/specializations/cardiology" style="color: #007bff; text-decoration: none;">Learn more</a>
+                </li>
+                <li>
+                    <strong>Neurology:</strong> Brain and nervous system care. 
+                    <a href="/specializations/neurology" style="color: #007bff; text-decoration: none;">Learn more</a>
+                </li>
+                <li>
+                    <strong>Orthopedics:</strong> Bone, joint, and muscle health. 
+                    <a href="/specializations/orthopedics" style="color: #007bff; text-decoration: none;">Learn more</a>
+                </li>
+                <li>
+                    <strong>Pediatrics:</strong> Healthcare for infants and children. 
+                    <a href="/specializations/pediatrics" style="color: #007bff; text-decoration: none;">Learn more</a>
+                </li>
+                <li>
+                    <strong>Dermatology:</strong> Skin, hair, and nail care. 
+                    <a href="/specializations/dermatology" style="color: #007bff; text-decoration: none;">Learn more</a>
+                </li>
+            </ul>
+        </div>
+        <div style="margin: 15px 0;">
+            <p>Contact us for appointments: 
+                <a href="tel:+18001234567" style="color: #007bff;">1-800-123-4567</a> or email 
+                <a href="mailto:info@hospitalname.com" style="color: #007bff;">info@ApolloHospital.com</a>.
+            </p>
+        </div>
+        <div style="margin-top: 15px;">
+            <p>Follow us on:</p>
+            <a href="https://facebook.com/hospitalname" target="_blank" style="margin-right: 10px;">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.55DCXbXlKDgEBoZhKxpzLAHaHa&pid=Api&P=0&h=180" alt="Facebook" style="width: 20px;">
+            </a>
+            <a href="https://twitter.com/hospitalname" target="_blank" style="margin-right: 10px;">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.1PhXG_4NLoBd-AdVO5DD7QHaHa&pid=Api&P=0&h=180" alt="Twitter" style="width: 20px;">
+            </a>
+            <a href="https://instagram.com/hospitalname" target="_blank">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.xa0FgRBsvMi7bmVNCDYsCgHaHa&pid=Api&P=0&h=180" alt="Instagram" style="width: 20px;">
+            </a>
+        </div>
+    </footer>
+    
+    <center>
+    <a href="{%  url 'brain:doctor' %}">Go to Registration Page</a>
+    </center>
+{% endblock %}

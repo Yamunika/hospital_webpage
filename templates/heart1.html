@@ -1,0 +1,270 @@
+{% extends 'dummy.html' %}
+{% block title %}
+<title>Heart1</title>
+{% endblock %}
+
+{% block body %}
+
+    <style>
+        /* General Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Section */
+        .header {
+            
+            color: black;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1.2rem;
+        }
+
+        /* Navigation Menu */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color:skyblue;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #003d80;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url(https://tse1.mm.bing.net/th?id=OIP.se22DphwLb64rPIZKylWRQHaCx&pid=Api&P=0&h=180) no-repeat center center/cover;
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .hero a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .services p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            font-size: 1rem;
+        }
+
+        .services .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .services .card {
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+        }
+
+        .services .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .services .card p {
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .social-icons img {
+            width: 20px;
+            margin: 0 5px;
+        }
+        .hospital-info {
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Welcome to APOLLO  Hospital</h1>
+        <p>Your health is our priority</p>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Quality Healthcare at Your Fingertips</h2>
+        <p>Comprehensive medical services and care for your entire family.</p>
+        <a href="#contact">Book an Appointment</a>
+    </div>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <h2>Our Services</h2>
+        <p>We provide a wide range of medical services, tailored to meet your healthcare needs.</p>
+        <div class="cards">
+            <div class="card">
+                <h3>General Medicine</h3>
+                <p>Expert care for your general health concerns and routine check-ups.</p>
+            </div>
+            <div class="card">
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency services for urgent medical situations.</p>
+            </div>
+            <div class="card">
+                <h3>Pediatrics</h3>
+                <p>Specialized care for infants, children, and adolescents.</p>
+            </div>
+            <div class="card">
+                <h3>Diagnostics</h3>
+                <p>Advanced diagnostic services to provide accurate results.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Apollo Hospital. All rights reserved.</p>
+    </div>
+    <center>
+        <main>
+            <h2>About Our Hospital</h2>
+            <div class="hospital-info">
+                <p><strong>Types of Hospitals:</strong></p>
+                <ul>
+                    <li>General Hospitals: Provide a wide range of services for various medical conditions.</li>
+                    <li>Specialized Hospitals: Focus on specific areas such as cardiology, oncology, and orthopedics.</li>
+                    <li>Teaching Hospitals: Train future medical professionals while offering patient care.</li>
+                </ul>
+    
+                <p><strong>Departments in Our Hospital:</strong></p>
+                <ul>
+                    <li>Emergency Department (ER)</li>
+                    <li>Outpatient Department (OPD)</li>
+                    <li>Inpatient Services</li>
+                    <li>Radiology and Pathology</li>
+                    <li>Surgical and Intensive Care Units (ICU)</li>
+                </ul>
+            </div>
+        </main>
+        </center>
+    
+        <footer>
+            <p>&copy; 2024 [Hospital Name]. All Rights Reserved.</p>
+            <div>
+                a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-of-service">Terms of Service</a>
+                <a href="/contact-us">Contact Us</a>
+            </div>
+            <div>
+                <p>For assistance, call us at <a href="tel:+18001234567">1-800-123-4567</a> or email us at <a href="mailto:support@hospitalname.com">support@hospitalname.com</a>.</p>
+            </div>
+            <div class="social-icons">
+                <p>Follow us:</p>
+            <a href="https://facebook.com/hospitalname" target="_blank">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.55DCXbXlKDgEBoZhKxpzLAHaHa&pid=Api&P=0&h=180"alt="Facebook">
+            </a>
+            <a href="https://twitter.com/hospitalname" target="_blank">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.1PhXG_4NLoBd-AdVO5DD7QHaHa&pid=Api&P=0&h=180" alt="Twitter">
+            </a>
+            <a href="https://instagram.com/hospitalname" target="_blank">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.xa0FgRBsvMi7bmVNCDYsCgHaHa&pid=Api&P=0&h=180" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    <center>
+ <a href="{% url 'heart:specialist1' %}">Click Here for Doctor Info</a>
+ </center>
+
+{% endblock %}
+
+       
